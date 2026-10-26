@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gestion de paiements des clients</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <nav class="navbar navbar-dark app-navbar mb-4">
+    <div class="container d-flex justify-content-between">
+    <span class="navbar-brand mb-0 fs-5">💳 Paiements clients</span>
+    <button id="theme-toggle" type="button" class="btn btn-outline-light btn-sm">🌓 Thème</button>
+</div>
+    </nav>
+    <main class="container pb-5">
+        <header class="mb-4">
+      <h1 class="h3 mb-1">Suivi des paiements</h1>
+      <p class="text-body-secondary mb-0">Encaissements, échéances et retards de vos clients en un coup d'œil.</p>
+    </header>
+    <div id="error-zone"></div>
+    <section id="stats-zone" class="row g-3 mb-4" aria-label="Indicateurs"></section>
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h2 class="h6 text-uppercase text-body-secondary mb-3">Nouveau paiement</h2>
+        <form id="payment-form" class="row g-3">
+          <div class="col-md-4">
+            <label for="client" class="form-label">Client</label>
+            <input id="client" name="client" class="form-control" required>
+          </div>
+          <div class="col-md-4">
+            <label for="category" class="form-label">Type de prestation</label>
+            <input id="category" name="category" class="form-control" list="category-list" required>
+            <datalist id="category-list"></datalist>
+          </div>
+          <div class="col-md-4">
+            <label for="amount" class="form-label">Montant (MAD)</label>
+            <input id="amount" name="amount" type="number" min="1" step="0.01" class="form-control" required>
+          </div>
+          <div class="col-md-4">
+            <label for="due-date" class="form-label">Échéance</label>
+            <input id="due-date" name="dueDate" type="date" class="form-control" required>
+          </div>
+          <div class="col-md-8">
+            <label for="description" class="form-label">Description</label>
+            <input id="description" name="description" class="form-control" placeholder="Facture, service…">
+          </div>
+          <div class="col-12 d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">Ajouter le paiement</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-5">
+            <label for="search" class="form-label">Rechercher</label>
+            <input id="search" type="search" class="form-control" placeholder="Nom du client, description…">
+          </div>
+          <div class="col-md-4">
+            <label for="category-filter" class="form-label">Type de prestation</label>
+            <select id="category-filter" class="form-select">
+              <option value="all">Toutes les catégories</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <div class="form-check form-switch mb-2">
+              <input id="unpaid-only" class="form-check-input" type="checkbox" role="switch">
+              <label for="unpaid-only" class="form-check-label">Impayés uniquement</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row g-4">
+      <section class="col-lg-8" aria-label="Liste des paiements">
+        <div id="items-zone"></div>
+      </section>
+      <aside class="col-lg-4" aria-label="Détail du paiement">
+        <div id="detail-zone" class="card shadow-sm card-body sticky-lg-top"></div>
+      </aside>
+    </div>
+    </main>
+    <script type="module" src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

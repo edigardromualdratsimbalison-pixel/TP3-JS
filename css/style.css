@@ -1,0 +1,31 @@
+body { background: var(--bs-tertiary-bg); }
+
+.app-navbar {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+
+.card { border-radius: .75rem; border-color: var(--bs-border-color); }
+
+.form-label {
+  font-size: .85rem;
+  color: var(--bs-secondary-color);
+  margin-bottom: .25rem;
+}
+
+.stat-value { font-size: 1.3rem; font-weight: 700; }
+
+#items-zone thead th {
+  color: var(--bs-secondary-color);
+  font-weight: 500;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+#items-zone tr[data-id] { cursor: pointer; }
+
+#detail-zone { top: 1rem; }
+
+@media (max-width: 575.98px) {
+  .stat-value { font-size: 1.1rem; }
+}

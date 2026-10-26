@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1, 
+        "name": "Atlas Digital",
+        "category": "Développement web", 
+        "amount": 12000, 
+        "paid": true,  
+        "dueDate": "2026-09-15", 
+        "description": "Site vitrine avec espace client" 
+    },
+    {
+         "id": 2, 
+         "name": "Café Jemaa",    
+         "category": "Design",            
+         "amount": 3500,  
+         "paid": false, 
+         "dueDate": "2026-10-05", 
+         "description": "Identité visuelle et logo" 
+    },
+    {
+         "id": 3, 
+         "name": "Riad Médina",   
+         "category": "Maintenance",       
+         "amount": 1800,  
+         "paid": true,  
+         "dueDate": "2026-10-01", 
+         "description": "Maintenance mensuelle du site de réservation" 
+    },
+    { 
+        "id": 4, 
+        "name": "Sahara Tours",  
+        "category": "Développement web", 
+        "amount": 9500,  "paid": false, 
+        "dueDate": "2026-10-30", 
+        "description": "Plateforme de réservation d'excursions" 
+    },
+    { 
+        "id": 5, 
+        "name": "Pharma Koutoubia", 
+        "category": "Conseil",        
+        "amount": 2200,  
+        "paid": false, 
+        "dueDate": "2026-09-28", 
+        "description": "Audit de la présence en ligne" 
+    },
+    { 
+        "id": 6, 
+        "name": "École Horizon", 
+        "category": "Formation",         
+        "amount": 4000,  
+        "paid": true,  
+        "dueDate": "2026-09-20", 
+        "description": "Formation du personnel aux outils numériques" 
+    },
+    { 
+        "id": 7, 
+        "name": "Menara Immo",   
+        "category": "Design",            
+        "amount": 2800,  
+        "paid": false, 
+        "dueDate": "2026-11-10", 
+        "description": "Maquettes de l'application mobile" 
+    },
+    {
+         "id": 8, 
+         "name": "Argan & Co",    
+         "category": "Maintenance",       
+         "amount": 1500,  
+         "paid": true,  
+         "dueDate": "2026-10-10", 
+         "description": "Hébergement et mises à jour de la boutique" 
+    },
+    {
+         "id": 9, 
+         "name": "Garage Guéliz", 
+         "category": "Conseil",           
+         "amount": 1200,  
+         "paid": false, 
+         "dueDate": "2026-11-02", 
+         "description": "Stratégie de communication digitale" 
+    },
+    {
+         "id": 10, 
+         "name": "Atlas Digital", 
+         "category": "Formation",        
+         "amount": 3000,  
+         "paid": false, 
+         "dueDate": "2026-10-12", 
+         "description": "Atelier JavaScript pour l'équipe technique" 
+    }
+
+]
